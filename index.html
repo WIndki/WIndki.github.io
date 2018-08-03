@@ -1,28 +1,80 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <title>Hank Quinlan, Horrible Cop</title>
-    </head>
-    <body>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/cv">CV</a></li>
-                <li><a href="/blog">Blog</a></li>
-            </ul>
-        </nav>
-        <div class="container">
-            <div class="blurb">
-                <h1>Hi there, I'm Hank Quinlan!</h1>
-                <p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-            </div><!-- /.blurb -->
-        </div><!-- /.container -->
-        <footer>
-            <ul>
-                <li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-                <li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-            </ul>
-        </footer>
-    </body>
+	<head>
+		<title>WINDKI</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="keywords" content="Windki,HMJ,黄勉嘉,風之魂,南海外国语">
+        <meta name="description" content="一个小的个人主页啦QAQ，求访问。无广告的了！还有图床哒QWQ，快来哇。">
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="https://cdn.cos.gz.dabaa.cn/assets/css/main.css" />
+        <link rel="stylesheet" href="https://cdn.cos.gz.dabaa.cn/assets/css/fonts.css" />
+        <!--<link rel="stylesheet" href="https://cdn.cos.gz.dabaa.cn/css/font-awesome.min.css" />-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <link rel="Shortcut Icon" href="https://cdn.cos.gz.dabaa.cn/assets/css/images/bitbug_favicon+(1).ico">	
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body class="loading">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+						<h1 class="red">WINDKI</h1>			
+                       <nav>
+							<ul>
+								<li><a href="//wpa.qq.com/msgrd?v=3&uin=1963457646&site=qq&menu=yes" class="fab fa-qq" target="_blank" title="QQ"><span class="label">QQ</span></a></li>
+								<li><a href="//www.facebook.com/huangmianjia" class="fab fa-facebook-f" target="_blank" title="Facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="//t.me/windki" class="fa fa-paper-plane" target="_blank" title="Telegram"><span class="label">Telegram</span></a></li>
+								<li><a href="mailto:mc@hongmin.xyz" class="fas fa-at" title="邮箱"><span class="label">Email</span></a></li>
+								<li><a href="//blog.windki.cn" class="fas fa-rss" target="_blank" title="博客"><span class="label">博客</span></a></li>
+								<li><a href="//img.windki.cn" class="far fa-images" target="_blank" title="图床"><span class="label">图床</span></a></li>
+								<li><a href="//love.windki.cn/time" class="fa fa-heart" target="_blank" title="爱情纪念"><span class="label">爱情</span></a></li>
+                                <li><a href="//status.windki.cn" class="fa fa-industry" target="_blank" title="网页状态"><span class="label">Commits</span></a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Footer -->
+					<footer id="footer">
+                          <span id="span_dt_dt"></span>
+                          <span class="copyright">&copy;2017<a href="http://html5up.net">WINDKI</a>.</span>
+					</footer>
+
+			</div>
+		</div>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script>
+			window.onload = function() { document.body.className = ''; }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+        <script language="javascript">
+                function show_date_time(){
+                window.setTimeout("show_date_time()", 1000);
+                BirthDay=new Date("7/13/2017 18:27:01");//月，日，年，小时，分钟，秒
+ 				today=new Date();
+				timeold=(today.getTime()-BirthDay.getTime());
+				sectimeold=timeold/1000
+				secondsold=Math.floor(sectimeold);
+				msPerDay=24*60*60*1000
+				e_daysold=timeold/msPerDay
+				daysold=Math.floor(e_daysold);
+				e_hrsold=(e_daysold-daysold)*24;
+				hrsold=setzero(Math.floor(e_hrsold));
+				e_minsold=(e_hrsold-hrsold)*60;
+				minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+				seconds=setzero(Math.floor((e_minsold-minsold)*60));
+				span_dt_dt.innerHTML="已运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+										}
+				function setzero(i){
+				if (i<10)
+				{i="0" + i};
+				return i;
+				}
+				show_date_time();
+		</script>
+	</body>
 </html>
